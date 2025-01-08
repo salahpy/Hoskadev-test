@@ -27,7 +27,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentCourse((prev) => (prev + 1) % courses.length);
-    }, 10000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, [courses]); // Ensure it triggers only when the courses array changes
